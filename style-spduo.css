@@ -1,0 +1,359 @@
+@font-face {
+    font-family: "abc regular";
+    src: url(ABC-Diatype-Font-Family-1.100-FIXED/ABC-Diatype-1.100/ABCDiatype-Regular.ttf);
+    
+}
+@font-face {
+    font-family: "abc bold";
+    src: url(ABC-Diatype-Font-Family-1.100-FIXED/ABC-Diatype-1.100/ABCDiatype-Bold.ttf);
+
+}
+
+ 
+
+*{
+    box-sizing: border-box;
+    cursor: url('cursor.png'), auto;
+
+}
+
+body{
+    background-color:#EBEBEB;
+
+}
+
+
+
+#logo{
+    background-color: rgba(255, 255, 255, 0);
+    height: 100px;
+    width: 100px;
+    left: -107px;
+    top: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+.left{
+    top: 14px;
+    left: 32px;
+    width: 16px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    
+}
+
+.right{
+    top: 14px;
+    left: 62px;
+    width: 16px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+   
+}
+
+
+.trans{
+    background-color: black;
+    top: 64px;
+    left: 49px;
+    width: 16px;
+    height: 45px;
+    transform:skew(37deg);
+    position: absolute;
+    
+
+}
+
+.carre{
+    top: 94px;
+    left: 33px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: black;
+   
+
+}   
+
+#logo:hover .left{
+    top: 1px;
+    left: 43px;
+    width: 16px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    transform: rotate(90deg);
+    transition: .2s;
+
+}
+
+#logo:hover .right{
+    top: 30px;
+    left: 43px;
+    width: 16px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    transform: rotate(90deg);
+    transition: .2s;
+
+}
+
+
+#logo:hover .trans{
+    background-color: black;
+    top: 60px;
+    left: 43px;
+    width: 16px;
+    height: 50px;
+    position: absolute;
+    transform: rotate(90deg);
+    transition: .2s;
+
+}
+
+#logo:hover .carre{
+    top: 105px;
+    left: 25px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: black;
+    transition: .2s;
+   
+
+}   
+
+/* .logo{
+    width: 100px;
+    height: 116px;
+    background-color: blueviolet; 
+    /* top: -4px;
+    left: 3px;
+    position: absolute;  
+} */
+
+
+
+.cath {
+    margin-top: 25px;
+    display: none;    
+    width: 30vw; 
+    font: 16px/24px Space Mono;
+    color: black;
+}
+
+.cath a:hover{
+    color: blue;
+}
+
+.date{
+    display: flex;
+    margin-left: -700px;
+    margin-top: -25px;
+    font: "abc bold" !important;
+}
+
+
+nav{
+    margin-left: 100px;
+    display: flex;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 8px; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 2;    
+}
+
+.lien{
+    color: black;
+    font-size:  18px ;
+    margin: 95px;
+    margin-top: -35px;
+    display: flex;
+    font-family: "space mono" ;
+}
+
+.lien:hover{
+    font-family: "space mono" ;
+    text-transform: uppercase;
+    transition: 1s;
+} 
+
+
+
+
+
+.active{
+    display: block;
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+    flex-direction: row ;
+    justify-content: end;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.line{
+    height: 1px;
+    width: 90vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: -110px;
+          
+}
+
+h2{
+    font: 16px/24px Space Mono;
+    display: flex;
+    
+}
+
+.dropdown{
+    position: relative;
+
+
+}
+
+
+.dropdown ul{
+    position: absolute;
+    top: 0;
+    left: 70px;
+    list-style: none;
+    z-index: 1;
+    font: 16px/24px Space Mono;
+    color:black;
+}
+
+
+
+
+
+.dropdown ul::after{
+    content: "";
+    display: block;
+    width: 150vw;
+    height: 217px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.349), rgba(255, 255, 255, 0));
+    background-position-x: 200px;
+    position: absolute;
+    top: -61px;
+    left: -925px;
+    border-bottom: 2px solid black;
+    z-index: -1;
+}
+
+h1{
+    font: 25px/25px Space Mono;
+
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.icone {
+    width: 10px;
+}
+
+
+
+.explain{
+    margin-left: 55px;
+    margin-top: 50px;
+    width: 575px; 
+    font: 15px/25px Space Mono;
+    position: absolute;
+    top: 190px;
+}
+
+
+#couv{
+    /* width: 500px; */
+    height: 499px;
+    position: absolute;
+    top: 282px;
+    left: 588px;;
+}
+
+
+
+.img{
+    height: 500px;
+    position: absolute;
+    top: -200px;
+    z-index: -2;
+}
+
+.explainpart2{
+    margin-left: 55px;
+    margin-top: 50px;
+    width: 350px; 
+    font: 15px/25px Space Mono;
+    position: absolute;
+    top: 705px;
+    left: 790px;
+}
+
+.imgpart2{
+    height: 500px;
+    position: absolute;
+    top: 380px;
+    left: -386;
+
+}
+
+#couvpart2{
+    height: 807px;
+    position: absolute;
+    top: 35px;
+    left: 85px;
+}
+
+#couvpart3{
+    height: 807px;
+    position: absolute;
+    top: 1300px;
+    left: 195px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(25, 0, 255); 
+  }
